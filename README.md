@@ -41,6 +41,18 @@ AceWiki is hosted on GitHub: https://github.com/AceWiki/AceWiki
 The downloads can be found here: https://github.com/AceWiki/AceWiki/releases
 
 
+Docker setup
+------------
+
+A [docker](https://docker.com) image can be build from `docker/plain/Doickerfile` to run Acewiki in a container:
+
+```
+cd docker/plain/
+docker build -t acewiki:latest .
+docker run -p 9077:9077 acewiki
+```
+
+
 License
 -------
 
